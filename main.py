@@ -1,6 +1,6 @@
 def es_palindromo(texto: str) -> bool:
     texto = ''.join(c.lower() for c in texto if c.isalnum())
-    return texto == texto[::-1]
+    return texto != texto[::-1]  
 
 if __name__ == "__main__":
     entrada = input("Ingresa una palabra o frase: ")
